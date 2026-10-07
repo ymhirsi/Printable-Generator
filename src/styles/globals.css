@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: theme('colors.paper');
+  color: theme('colors.ink');
+  font-family: theme('fontFamily.sans');
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid theme('colors.ink');
+  outline-offset: 2px;
+}
+
+/* VexFlow renders SVGs into containers we mount; ensure they scale cleanly. */
+.score svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,133 @@
+// AUTO-GENERATED from master-data.docx by `npm run sync-data`.
+// Do not edit by hand — edit the docx and re-sync.
+
+import type { TechniqueDef } from '../types'
+
+export const TECHNIQUES: TechniqueDef[] = [
+  {
+    id: "pentascale-major", name: "Pentascale (Major)", category: "Scales",
+    description: "Five-note scale: degrees 1–2–3–4–5 ascending, then descending. Always 1 octave.",
+    octavesAllowed: [1],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "From tonic, ascend through degrees 1–5, descend back to tonic.",
+  },
+  {
+    id: "pentascale-minor", name: "Pentascale (Minor)", category: "Scales",
+    description: "Five-note minor scale: 1–2–♭3–4–5 ascending, then descending. Always 1 octave.",
+    octavesAllowed: [1],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "From tonic, ascend through minor degrees 1–5, descend back to tonic.",
+  },
+  {
+    id: "scale", name: "Scale", category: "Scales",
+    description: "Standard diatonic scale, ascending then descending. In major keys: major scale. In minor keys: natural, harmonic, or melodic (selected per queue entry; each variant adds its own entry).",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Major: 7 diatonic degrees + tonic at top of each octave. Minor / natural: 7 natural degrees + tonic at top. Minor / harmonic: natural with raised 7 (both directions). Minor / melodic: raised 6 & 7 ascending; natural descending.",
+  },
+  {
+    id: "scale-chromatic", name: "Chromatic Scale", category: "Scales",
+    description: "All 12 semitones ascending (sharps) and descending (flats).",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Spelling: ascending uses sharps for non-diatonic pitches; descending uses flats. Diatonic pitches still rely on the key signature (no redundant accidentals). Where a chromatic pitch contradicts a key-signature accidental — e.g. ascending B in F major after the B♭ in the signature — render a natural to cancel. Apply uniformly across all 24 keys.",
+  },
+  {
+    id: "scale-contrary-motion", name: "Contrary Motion Scale", category: "Scales",
+    description: "Both hands begin on tonic; RH ascends while LH descends, then both return.",
+    octavesAllowed: [1,2],
+    handConfigsAllowed: ["together"],
+    generationNotes: "Symmetric: hands begin a unison apart and mirror outwards, then return.",
+  },
+  {
+    id: "scale-thirds", name: "Scale in Thirds", category: "Scales",
+    description: "Diatonic scale played in parallel thirds, ascending then descending.",
+    octavesAllowed: [1,2],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Each note paired with the diatonic third above; both ascend then descend together.",
+  },
+  {
+    id: "scale-sixths", name: "Scale in Sixths", category: "Scales",
+    description: "Diatonic scale played in parallel sixths.",
+    octavesAllowed: [1,2],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Each note paired with the diatonic sixth above.",
+  },
+  {
+    id: "scale-octaves", name: "Scale in Octaves", category: "Scales",
+    description: "Diatonic scale played in octaves.",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Each note paired with itself one octave higher; played 1–5 fingering throughout.",
+  },
+  {
+    id: "triads-solid", name: "Solid Triads", category: "Chords",
+    description: "Tonic triad in root, 1st inversion, 2nd inversion — ascending then descending, all as block chords.",
+    octavesAllowed: [1,2],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Root, 1st inv, 2nd inv, root (oct up); reverse descending.",
+  },
+  {
+    id: "triads-broken", name: "Broken Triads", category: "Chords",
+    description: "Same triad inversions, broken note-by-note instead of as block chords.",
+    octavesAllowed: [1,2],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Each triad rolled bottom-up; sequence as in Solid Triads.",
+  },
+  {
+    id: "cadence", name: "Cadence", category: "Chords",
+    description: "I–IV–I⁶⁴–V⁷–I (major); i–iv–i⁶⁴–V⁷–i (minor). Five block chords.",
+    octavesAllowed: [1],
+    handConfigsAllowed: ["together"],
+    generationNotes: "Bass (LH) on bass staff; upper three voices (RH) on treble. Voicings derived from a fixed scale-degree template, transposed and re-spelled per key.",
+  },
+  {
+    id: "arp-root", name: "Arpeggio", category: "Arpeggios",
+    description: "Tonic triad arpeggiated. Choose one or more inversions (root, 1st, 2nd); each adds its own queue entry and score block.",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "1–3–5 across each octave; tonic at top; reverse descending.",
+  },
+  {
+    id: "arp-first-inv", name: "1st Inversion Arpeggio", category: "Arpeggios",
+    description: "Tonic triad arpeggiated in 1st inversion.",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "3–5–1(oct) repeating across octaves; reverse descending.",
+  },
+  {
+    id: "arp-second-inv", name: "2nd Inversion Arpeggio", category: "Arpeggios",
+    description: "Tonic triad arpeggiated in 2nd inversion.",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "5–1–3 repeating across octaves; reverse descending.",
+  },
+  {
+    id: "arp-dominant-7", name: "Dominant 7th Arpeggio", category: "Arpeggios",
+    description: "Arpeggiated dominant 7th chord (root, major 3rd, perfect 5th, minor 7th) built on any of the 12 chromatic roots. Choose root, 1st, or 2nd inversion; each adds its own queue entry and score block.",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Standalone chromatic chord, independent of any key signature; all accidentals drawn explicitly. Flat spelling for black-key roots except F#7 (never Gb7). Chord tones stacked in thirds (root, 3rd, 5th, b7), rolled across octaves.",
+  },
+  {
+    id: "arp-diminished-7", name: "Diminished 7th Arpeggio", category: "Arpeggios",
+    description: "Arpeggiated fully-diminished 7th chord (a symmetrical stack of minor thirds) built on any of the 12 chromatic roots. Root position only — the chord is symmetrical, so it has no distinct inversions.",
+    octavesAllowed: [1,2,3,4],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "Standalone chromatic chord, independent of any key signature; all accidentals drawn explicitly (including double-flats, e.g. Cdim7 = C–Eb–Gb–Bbb). Sharp spelling for black-key roots, no exceptions. Chord tones stacked in thirds on consecutive letter names.",
+  },
+  {
+    id: "arp-hand-over-hand", name: "Hand-Over-Hand Arpeggio", category: "Arpeggios",
+    description: "Tonic triad arpeggiated with hands alternating across the keyboard.",
+    octavesAllowed: [3,4],
+    handConfigsAllowed: ["together"],
+    generationNotes: "LH on low octaves, RH on high. Hands alternate: LH plays one triad ascent, RH continues, and so on across 3–4 octaves of range, then reverse.",
+  },
+  {
+    id: "formula-pattern", name: "Formula Pattern", category: "Patterns",
+    description: "Russian-school formula pattern: scale up, leap up, scale down, arpeggio up, scale down, leap down, scale up, arpeggio down.",
+    octavesAllowed: [2,3],
+    handConfigsAllowed: ["RH","LH","separate","together"],
+    generationNotes: "See Section 4 — Formula Pattern Definition. Sequence: up – out – in – up – down – out – in – down.",
+  },
+]
